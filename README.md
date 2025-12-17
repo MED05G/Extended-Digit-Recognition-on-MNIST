@@ -114,18 +114,7 @@ Strict test accuracy for the single-model runs:
 
 Full details and error analysis are in the notebook sections 5–10.
 
-## Publish to GitHub
-1) Initialize the repo and commit tracked files:
-   ```bash
-   git init
-   git add .
-   git commit -m "Add digit recognition study notebook"
-   ```
-2) Create a GitHub repo, then connect and push:
-   ```bash
-   git branch -M main
-   git remote add origin git@github.com:<your-username>/<repo-name>.git
-   git push -u origin main
+
    ```
 3) Verify `data/` and model checkpoints stay untracked (`git status` should show a clean tree).
 >>>>>>> d137716 (Add MNIST comparative study notebook)

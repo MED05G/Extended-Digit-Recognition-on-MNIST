@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Extended Digit Recognition on MNIST  
 ## Comparative Study: Architecture, Learning Paradigm, and Training Protocol
 
@@ -72,3 +73,59 @@ Typical files you may find in this repo:
 ### 1) Install requirements
 ```bash
 pip install torch torchvision matplotlib numpy scikit-learn
+=======
+# Extended Digit Recognition - Comparative Study
+
+Comparative MNIST study exploring four setups inside a single notebook: a fully-connected MLP baseline, a small CNN, an unsupervised autoencoder, and a classifier initialized from the trained AE encoder. Everything lives in `Extended_Digit_Recognition_–_Comparative_Study_(MLP_·_CNN_·_AE_·_AE→Classifier.ipynb`.
+
+## Contents
+- Notebook with experiments, evaluation, and commentary.
+- `fig_ae_latent_pca_2d.png`: PCA visualization of the autoencoder latent space.
+- `models/summary_single_models.csv`: compact metrics table retained for reference.
+- `data/` (MNIST download cache) and model checkpoints are gitignored to keep the repo light.
+
+## Setup
+1) Create an environment (example with venv):
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+2) Install dependencies (adjust the PyTorch command per your platform if needed):
+   ```bash
+   pip install torch torchvision torchaudio numpy pandas scikit-learn matplotlib jupyter
+   ```
+
+## Run the notebook
+1) Launch Jupyter:
+   ```bash
+   jupyter lab  # or: jupyter notebook
+   ```
+2) Open the notebook file and run cells in order. The MNIST dataset will download automatically into `data/` on first run.
+3) Trained weights are saved under `models/` (ignored by git). Keep any metrics you want to track in text/CSV form.
+
+## Results snapshot
+Strict test accuracy for the single-model runs:
+
+| Model           | Accuracy | Params   |
+| --------------- | -------- | -------- |
+| MLP             | 0.9782   | 535,818  |
+| CNN (single)    | 0.9944   | 1,701,578|
+| AE -> Classifier| 0.9745   | 476,490  |
+
+Full details and error analysis are in the notebook sections 5–10.
+
+## Publish to GitHub
+1) Initialize the repo and commit tracked files:
+   ```bash
+   git init
+   git add .
+   git commit -m "Add digit recognition study notebook"
+   ```
+2) Create a GitHub repo, then connect and push:
+   ```bash
+   git branch -M main
+   git remote add origin git@github.com:<your-username>/<repo-name>.git
+   git push -u origin main
+   ```
+3) Verify `data/` and model checkpoints stay untracked (`git status` should show a clean tree).
+>>>>>>> d137716 (Add MNIST comparative study notebook)

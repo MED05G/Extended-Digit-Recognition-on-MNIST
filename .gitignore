@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter artifacts
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Environments
+.env
+.venv
+env/
+venv/
+*.egg-info/
+
+# Data and model artifacts (downloaded or generated)
+data/
+models/
+!models/*.csv
+
+# OS files
+.DS_Store

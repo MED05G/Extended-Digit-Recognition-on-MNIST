@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Extended Digit Recognition on MNIST  
 ## Comparative Study: Architecture, Learning Paradigm, and Training Protocol
 

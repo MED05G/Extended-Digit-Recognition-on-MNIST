@@ -9,11 +9,11 @@ We implement and evaluate three approaches:
 - **CNN (Convolutional Neural Network)** — convolution + pooling to exploit image structure  
 - **Autoencoder → Classifier (AE→Classifier)** — unsupervised representation learning + supervised classification
 
-The study is done by a team of **3 people**, where each person focuses on one major comparison axis:
+The study is done by a team of **3 friends**, where each person focuses on one major comparison axis:
 
-- **Person 1 (Architecture & Inductive Bias):** how the model structure affects learning and generalization  
-- **Person 2 (Learning Paradigm & Data Efficiency):** supervised learning vs unsupervised transfer (representation reuse)  
-- **Person 3 (Optimization, Training Protocol & Evaluation):** how training settings affect results and behavior  
+- **Mohamed El Fellahi  (Architecture & Inductive Bias):** how the model structure affects learning and generalization  
+- **Aya Mahboub  (Learning Paradigm & Data Efficiency):** supervised learning vs unsupervised transfer (representation reuse)  
+- **Rida Boubakr (Optimization, Training Protocol & Evaluation):** how training settings affect results and behavior  
 
 ---
 

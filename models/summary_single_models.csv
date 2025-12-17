@@ -1,0 +1,4 @@
+Model,Strict Test Acc,Params
+MLP,0.9782,535818
+CNN (single),0.9944,1701578
+AE→Classifier,0.9745,476490

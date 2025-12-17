@@ -18,8 +18,9 @@ venv/
 
 # Data and model artifacts (downloaded or generated)
 data/
-models/
-!models/*.csv
+models/*.pt
+models/*.pth
+models/*.bin
 
 # OS files
 .DS_Store
